@@ -1,0 +1,2605 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/pierre/ontologies/2020/10/projet-ontologies"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/pierre/ontologies/2020/10/projet-ontologies">
+    <Prefix name="" IRI="http://www.semanticweb.org/pierre/ontologies/2020/10/projet-ontologies"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is an Ontology about means of transportations and their characteristics, to help decide which mean of  transportation to take to minimize the impact on the environnement (pollution, noise pollution ...)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Transport</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Air"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anywhere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Autonomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bicycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusDriver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Captain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Characteristics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CruiseShip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Days"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EcosystemRespect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergySources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FossilFuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasolineCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Helicopter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighNoise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighSafety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighSpeedTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostingArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hours"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanPowered"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JumpScooter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Land"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LongDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowNoise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowSafety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaximumSpeed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumNoise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumSafety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumSpeed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motorbike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoNoise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoisePollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnFoot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passengers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pilot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateTransport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicTransport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RenewableFuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SafetyRegulationLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShortDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaxiDriver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainDriver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tramway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportationArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unlimited"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryShortDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YearsOfLifetime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yourself"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#+50years"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#10years"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#30years"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#40years"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#5years"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#~100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#~5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#~50"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#~500"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bestUsedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canCarry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canHost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canLast"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#emitsPollution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAutonomyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDrivenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEfficient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParkedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makesNoise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needsSafety"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#poweredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#travelBy"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Air"/>
+        <Class IRI="#TransportationArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#HostingArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Plane"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anywhere"/>
+        <Class IRI="#HostingArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Autonomy"/>
+        <Class IRI="#Characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PrivateTransport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#HumanPowered"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#ShortDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#1"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#5years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Unlimited"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#Slow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#Yourself"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#HighEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Anywhere"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#LowNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#LowSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <ObjectUnionOf>
+                <Class IRI="#MediumDistance"/>
+                <Class IRI="#ShortDistance"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~50"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#10years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#MediumPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Days"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#MediumSpeed"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#BusDriver"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#MediumEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#BusStation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#MediumNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#MediumSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusDriver"/>
+        <Class IRI="#Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusStation"/>
+        <Class IRI="#HostingArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusStation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Bus"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Captain"/>
+        <Class IRI="#Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#MediumDistance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#ShortDistance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Parking"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~5"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#10years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Days"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#MediumSpeed"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#Yourself"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#MediumEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#LowSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PrivateTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Characteristics"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#LongDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~500"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#30years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#HighPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Days"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#Slow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#Captain"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#LowEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Port"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#LowNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#HighSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CruiseShip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Water"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Days"/>
+        <Class IRI="#Autonomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Driver"/>
+        <Class IRI="#Characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EcosystemRespect"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricCar"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricCar"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#LowPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricCar"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#LowNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricCar"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyEfficiency"/>
+        <Class IRI="#EcosystemRespect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergySources"/>
+        <Class IRI="#Characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fast"/>
+        <Class IRI="#MaximumSpeed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FossilFuel"/>
+        <Class IRI="#EnergySources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasolineCar"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasolineCar"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#MediumPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasolineCar"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#MediumNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasolineCar"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geography"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#MediumDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~5"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#40years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#MediumPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Hours"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#Fast"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#Pilot"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#LowEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Airport"/>
+                <Class IRI="#Port"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#HighNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#HighSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PrivateTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Air"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighEfficiency"/>
+        <Class IRI="#EnergyEfficiency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighNoise"/>
+        <Class IRI="#NoisePollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighPollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSafety"/>
+        <Class IRI="#SafetyRegulationLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#LongDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~500"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#40years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#LowPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Hours"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#Fast"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#TrainDriver"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#HighEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#TrainStation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#MediumNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#HighSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpeedTrain"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostingArea"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hours"/>
+        <Class IRI="#Autonomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanPowered"/>
+        <Class IRI="#EnergySources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#HumanPowered"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#VeryShortDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#1"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#1year"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#NoPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Unlimited"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#Slow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#Yourself"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#HighEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Anywhere"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#LowNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#LowSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <ObjectUnionOf>
+                <Class IRI="#PrivateTransport"/>
+                <Class IRI="#PublicTransport"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Land"/>
+        <Class IRI="#TransportationArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LongDistance"/>
+        <Class IRI="#Geography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowEfficiency"/>
+        <Class IRI="#EnergyEfficiency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowNoise"/>
+        <Class IRI="#NoisePollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowPollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowSafety"/>
+        <Class IRI="#SafetyRegulationLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaximumSpeed"/>
+        <Class IRI="#Characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumDistance"/>
+        <Class IRI="#Geography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumEfficiency"/>
+        <Class IRI="#EnergyEfficiency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumNoise"/>
+        <Class IRI="#NoisePollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumPollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumSafety"/>
+        <Class IRI="#SafetyRegulationLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumSpeed"/>
+        <Class IRI="#MaximumSpeed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#ShortDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~500"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#40years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#LowPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Hours"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#MediumSpeed"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#TrainDriver"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#HighEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#TrainStation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#MediumNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#MediumSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <ObjectUnionOf>
+                <Class IRI="#MediumDistance"/>
+                <Class IRI="#ShortDistance"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#1"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#10years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#MediumPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Days"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#MediumSpeed"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#Yourself"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#MediumEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Anywhere"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#MediumNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#LowSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PrivateTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoNoise"/>
+        <Class IRI="#NoisePollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoPollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoisePollution"/>
+        <Class IRI="#EcosystemRespect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#VeryShortDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#1"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#+50years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#NoPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Unlimited"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#Slow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#Yourself"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#HighEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Anywhere"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#NoNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#LowSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PrivateTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#HumanPowered"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnFoot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking"/>
+        <Class IRI="#HostingArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Car"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Motorbike"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Taxi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passengers"/>
+        <Class IRI="#Characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pilot"/>
+        <Class IRI="#Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#LongDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~100"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#30years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#HighPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Hours"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#Fast"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#Pilot"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#LowEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Airport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#HighNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#HighSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Air"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollution"/>
+        <Class IRI="#EcosystemRespect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#HostingArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#CruiseShip"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateTransport"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <Class IRI="#Characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicTransport"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RenewableFuel"/>
+        <Class IRI="#EnergySources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SafetyRegulationLevel"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShortDistance"/>
+        <Class IRI="#Geography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slow"/>
+        <Class IRI="#MaximumSpeed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#ShortDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#1"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#5years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#MediumPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Days"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#MediumSpeed"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#TaxiDriver"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#LowEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Parking"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#MediumNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#LowSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PrivateTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaxiDriver"/>
+        <Class IRI="#Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <ObjectUnionOf>
+                <Class IRI="#LongDistance"/>
+                <Class IRI="#MediumDistance"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~500"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canLast"/>
+            <Class IRI="#40years"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#LowPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Days"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#MediumSpeed"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#TrainDriver"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#MediumEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#TrainStation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#MediumNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#MediumSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainDriver"/>
+        <Class IRI="#Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <Class IRI="#HostingArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Car"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#HighSpeedTrain"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Metro"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Train"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHost"/>
+            <Class IRI="#Tramway"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#ShortDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canCarry"/>
+            <Class IRI="#~50"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#emitsPollution"/>
+            <Class IRI="#LowPollution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAutonomyOf"/>
+            <Class IRI="#Days"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSpeed"/>
+            <Class IRI="#MediumSpeed"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDrivenBy"/>
+            <Class IRI="#TrainDriver"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isEfficient"/>
+            <Class IRI="#HighEfficiency"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#TrainStation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#makesNoise"/>
+            <Class IRI="#MediumNoise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#needsSafety"/>
+            <Class IRI="#MediumSafety"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#travelBy"/>
+            <Class IRI="#Land"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <ObjectMaxCardinality cardinality="30">
+            <ObjectProperty IRI="#canLast"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportationArea"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unlimited"/>
+        <Class IRI="#Autonomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryShortDistance"/>
+        <Class IRI="#Geography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="#TransportationArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YearsOfLifetime"/>
+        <Class IRI="#Characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yourself"/>
+        <Class IRI="#Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#+50years"/>
+        <Class IRI="#YearsOfLifetime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1"/>
+        <Class IRI="#Passengers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1year"/>
+        <Class IRI="#YearsOfLifetime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#10years"/>
+        <Class IRI="#YearsOfLifetime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#30years"/>
+        <Class IRI="#YearsOfLifetime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#40years"/>
+        <Class IRI="#YearsOfLifetime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#5years"/>
+        <Class IRI="#YearsOfLifetime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#~100"/>
+        <Class IRI="#Passengers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#~5"/>
+        <Class IRI="#Passengers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#~50"/>
+        <Class IRI="#Passengers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#~500"/>
+        <Class IRI="#Passengers"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Air"/>
+        <Class IRI="#Land"/>
+        <Class IRI="#Water"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Airport"/>
+        <Class IRI="#Anywhere"/>
+        <Class IRI="#BusStation"/>
+        <Class IRI="#Parking"/>
+        <Class IRI="#Port"/>
+        <Class IRI="#TrainStation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bicycle"/>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Car"/>
+        <Class IRI="#CruiseShip"/>
+        <Class IRI="#HighSpeedTrain"/>
+        <Class IRI="#Metro"/>
+        <Class IRI="#Motorbike"/>
+        <Class IRI="#OnFoot"/>
+        <Class IRI="#Plane"/>
+        <Class IRI="#Taxi"/>
+        <Class IRI="#Tramway"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BusDriver"/>
+        <Class IRI="#Captain"/>
+        <Class IRI="#Pilot"/>
+        <Class IRI="#TaxiDriver"/>
+        <Class IRI="#TrainDriver"/>
+        <Class IRI="#Yourself"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Captain"/>
+        <Class IRI="#Pilot"/>
+        <Class IRI="#TaxiDriver"/>
+        <Class IRI="#TrainDriver"/>
+        <Class IRI="#Yourself"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Days"/>
+        <Class IRI="#Hours"/>
+        <Class IRI="#Unlimited"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectricCar"/>
+        <Class IRI="#GasolineCar"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fast"/>
+        <Class IRI="#MediumSpeed"/>
+        <Class IRI="#Slow"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FossilFuel"/>
+        <Class IRI="#HumanPowered"/>
+        <Class IRI="#RenewableFuel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighEfficiency"/>
+        <Class IRI="#LowEfficiency"/>
+        <Class IRI="#MediumEfficiency"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighNoise"/>
+        <Class IRI="#LowNoise"/>
+        <Class IRI="#MediumNoise"/>
+        <Class IRI="#NoNoise"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighPollution"/>
+        <Class IRI="#LowPollution"/>
+        <Class IRI="#MediumPollution"/>
+        <Class IRI="#NoPollution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighSafety"/>
+        <Class IRI="#LowSafety"/>
+        <Class IRI="#MediumSafety"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LongDistance"/>
+        <Class IRI="#MediumDistance"/>
+        <Class IRI="#ShortDistance"/>
+        <Class IRI="#VeryShortDistance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PrivateTransport"/>
+        <Class IRI="#PublicTransport"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#+50years"/>
+        <Class IRI="#1year"/>
+        <Class IRI="#10years"/>
+        <Class IRI="#30years"/>
+        <Class IRI="#40years"/>
+        <Class IRI="#5years"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#1"/>
+        <Class IRI="#~100"/>
+        <Class IRI="#~5"/>
+        <Class IRI="#~50"/>
+        <Class IRI="#~500"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canCarry"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canHost"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAutonomyOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makesNoise"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#needsSafety"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#poweredBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#canCarry"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#canLast"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAutonomyOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSpeed"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isDrivenBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isEfficient"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#makesNoise"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#needsSafety"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#travelBy"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bestUsedFor"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canCarry"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canHost"/>
+        <Class IRI="#HostingArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canLast"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#emitsPollution"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAutonomyOf"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpeed"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDrivenBy"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEfficient"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isParkedAt"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makesNoise"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#needsSafety"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#poweredBy"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#travelBy"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bestUsedFor"/>
+        <Class IRI="#Geography"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canCarry"/>
+        <Class IRI="#Passengers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canHost"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canLast"/>
+        <Class IRI="#YearsOfLifetime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#emitsPollution"/>
+        <Class IRI="#Pollution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAutonomyOf"/>
+        <Class IRI="#Autonomy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpeed"/>
+        <Class IRI="#MaximumSpeed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDrivenBy"/>
+        <Class IRI="#Driver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEfficient"/>
+        <Class IRI="#EnergyEfficiency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isParkedAt"/>
+        <Class IRI="#HostingArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makesNoise"/>
+        <Class IRI="#NoisePollution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#needsSafety"/>
+        <Class IRI="#SafetyRegulationLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="#Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#poweredBy"/>
+        <Class IRI="#EnergySources"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#travelBy"/>
+        <Class IRI="#TransportationArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#TransportationArea"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Autonomy</IRI>
+        <Literal>The autonomy of the vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Autonomy</IRI>
+        <Literal>Autonomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Characteristics</IRI>
+        <Literal>Characteristics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Driver</IRI>
+        <Literal>The person driving the vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Driver</IRI>
+        <Literal>Driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EcosystemRespect</IRI>
+        <Literal>EcosystemRespect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnergySources</IRI>
+        <Literal>The energy source that is used by the vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnergySources</IRI>
+        <Literal>EnergySources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HostingArea</IRI>
+        <Literal>HostingArea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MaximumSpeed</IRI>
+        <Literal>The maximum speed that the vehicle can go</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MaximumSpeed</IRI>
+        <Literal>MaximumSpeed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Passengers</IRI>
+        <Literal>The number of passengers the vehicle can carry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Passengers</IRI>
+        <Literal>Passengers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Property</IRI>
+        <Literal>The owner of the vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Property</IRI>
+        <Literal>Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Structure</IRI>
+        <Literal>Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transport</IRI>
+        <Literal>Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportationArea</IRI>
+        <Literal>TransportationArea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vehicle</IRI>
+        <Literal>Vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YearsOfLifetime</IRI>
+        <Literal>How many years the vehicle can last</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#YearsOfLifetime</IRI>
+        <Literal>YearsOfLifetime</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
