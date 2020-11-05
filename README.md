@@ -6,15 +6,15 @@ This is an ontology about means of transportations and their characteristics, to
 
 **Asserted graph**:
 
-![OWLViz asserted graph](./asserted.png)
+![OWLViz asserted graph](./img/asserted.png)
 
 **Inferred graph**:
 
-![OWLViz asserted graph](./inferred.png)
+![OWLViz asserted graph](./img/inferred.png)
 
 **Class hierarchy**:
 
-![Class hierarchy](./hierarchy.png)
+![Class hierarchy](./img/hierarchy.png)
 
 **Network graph**:
-![Network graph](./vowl.png)
+![Network graph](./img/vowl.png)
