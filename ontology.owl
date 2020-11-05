@@ -473,26 +473,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Bus"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#poweredBy"/>
-            <Class IRI="#FossilFuel"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bus"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#poweredBy"/>
-            <Class IRI="#RenewableFuel"/>
-        </ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#MediumDistance"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Bus"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#bestUsedFor"/>
-            <ObjectUnionOf>
-                <Class IRI="#MediumDistance"/>
-                <Class IRI="#ShortDistance"/>
-            </ObjectUnionOf>
+            <Class IRI="#ShortDistance"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -575,6 +565,20 @@
     <SubClassOf>
         <Class IRI="#Bus"/>
         <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#travelBy"/>
             <Class IRI="#Land"/>
         </ObjectAllValuesFrom>
@@ -605,23 +609,23 @@
     <SubClassOf>
         <Class IRI="#Car"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#bestUsedFor"/>
-            <Class IRI="#MediumDistance"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Car"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#bestUsedFor"/>
-            <Class IRI="#ShortDistance"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Car"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isParkedAt"/>
             <Class IRI="#Parking"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#MediumDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#ShortDistance"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Car"/>
@@ -938,10 +942,14 @@
         <Class IRI="#Helicopter"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#isParkedAt"/>
-            <ObjectUnionOf>
-                <Class IRI="#Airport"/>
-                <Class IRI="#Port"/>
-            </ObjectUnionOf>
+            <Class IRI="#Airport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helicopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isParkedAt"/>
+            <Class IRI="#Port"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1208,10 +1216,14 @@
         <Class IRI="#JumpScooter"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#ownedBy"/>
-            <ObjectUnionOf>
-                <Class IRI="#PrivateTransport"/>
-                <Class IRI="#PublicTransport"/>
-            </ObjectUnionOf>
+            <Class IRI="#PrivateTransport"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JumpScooter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#PublicTransport"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1383,10 +1395,14 @@
         <Class IRI="#Motorbike"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#bestUsedFor"/>
-            <ObjectUnionOf>
-                <Class IRI="#MediumDistance"/>
-                <Class IRI="#ShortDistance"/>
-            </ObjectUnionOf>
+            <Class IRI="#MediumDistance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorbike"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#ShortDistance"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1600,24 +1616,24 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Parking"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#canHost"/>
             <Class IRI="#Car"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Parking"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#canHost"/>
             <Class IRI="#Motorbike"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Parking"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#canHost"/>
             <Class IRI="#Taxi"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Passengers"/>
@@ -1888,26 +1904,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Train"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#poweredBy"/>
-            <Class IRI="#FossilFuel"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Train"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#poweredBy"/>
-            <Class IRI="#RenewableFuel"/>
-        </ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#bestUsedFor"/>
+            <Class IRI="#LongDistance"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Train"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#bestUsedFor"/>
-            <ObjectUnionOf>
-                <Class IRI="#LongDistance"/>
-                <Class IRI="#MediumDistance"/>
-            </ObjectUnionOf>
+            <Class IRI="#MediumDistance"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1990,6 +1996,20 @@
     <SubClassOf>
         <Class IRI="#Train"/>
         <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#FossilFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#poweredBy"/>
+            <Class IRI="#RenewableFuel"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#travelBy"/>
             <Class IRI="#Land"/>
         </ObjectAllValuesFrom>
@@ -2004,38 +2024,38 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TrainStation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#canHost"/>
             <Class IRI="#Car"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TrainStation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#canHost"/>
             <Class IRI="#HighSpeedTrain"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TrainStation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#canHost"/>
             <Class IRI="#Metro"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TrainStation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#canHost"/>
             <Class IRI="#Train"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TrainStation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#canHost"/>
             <Class IRI="#Tramway"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tramway"/>
