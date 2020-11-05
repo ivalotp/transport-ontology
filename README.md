@@ -15,3 +15,6 @@ This is an ontology about means of transportations and their characteristics, to
 **Class hierarchy**:
 
 ![Class hierarchy](./hierarchy.png)
+
+**Network graph**:
+![Network graph](./vowl.png)
